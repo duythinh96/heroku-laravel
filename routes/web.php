@@ -15,3 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MainController::class, 'welcome'])->name('index');
+
+Route::prefix('personal')->group(function () {
+    Route::prefix('duythinh')->group(function () {
+        require_once 'personal/duythinh.php';
+    });
+});
