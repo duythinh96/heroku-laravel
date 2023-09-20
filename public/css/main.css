@@ -1,0 +1,132 @@
+@import "libs/base.css";
+@import "libs/effects.css";
+@import "libs/modal.css";
+
+body {
+    height: 100vh;
+}
+
+body, .nav-link, .side-link {
+    color: lightslategray;
+}
+
+.w-side {
+    width: var(--side-width);
+}
+
+.w-main {
+    width: calc(100% - var(--side-width));
+}
+
+.w-0 {
+    width: 0;
+    overflow: hidden;
+}
+
+.w-0 * {
+    display: none;
+}
+
+.w-30 {
+    width: 20px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100vh !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.main-bg {
+    background: var(--layout-bg);
+}
+
+.brand {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.avt {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.side-link {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.side-link.active {
+    color: white;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.w-300 {
+    width: 300px;
+}
+
+.tag-des {
+    height: 100px;
+    overflow: hidden;
+}
+
+.artisan {
+    position: relative;
+    text-align: center;
+}
+
+.artisan .artisan-message {
+    position: absolute;
+    top: 50px;
+    left: calc(50% + 20px);
+    color: black;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.hover:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.icon {
+    position: relative;
+    text-align: center;
+}
+
+.icon .icon-item {
+    position: absolute;
+    top: 50px;
+    left: calc(50% + 20px);
+    background: white;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.dark {
+    background: #13141d;
+}

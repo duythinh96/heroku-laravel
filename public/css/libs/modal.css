@@ -1,0 +1,36 @@
+.modal-wrap {
+    z-index: 999;
+    position: fixed !important;
+    top: 0;
+    left:0;
+    width: 100%  !important;
+    height: 100vh  !important;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    z-index: 999;
+    position: absolute;
+}
+
+.modal-content.sm {
+    width: 300px;
+    top: 10vh;
+    left: calc(50% - 150px);
+}
+
+.modal-content.md {
+    width: 450px;
+    top: 10vh;
+    left: calc(50% - 225px);
+}
+.modal-content.lg {
+    width: 70%;
+    top: 10vh;
+    left: 15%;
+}
+.modal-content.xl {
+    width: 90%;
+    top: 5vh;
+    left: 5%;
+}

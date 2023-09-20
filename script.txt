@@ -1,0 +1,9 @@
+php artisan migrate:fresh --seed
+
+php artisan migrate:refresh --path='./database/migrations/2023_09_13_101237_products.php'
+php artisan migrate:refresh --path='./database/migrations/2023_09_14_030934_product_links.php'
+php artisan migrate:refresh --path='./database/migrations/2023_09_14_161207_product_imgs.php'
+
+php artisan migrate:refresh --path='./database/migrations/2023_09_16_153222_components.php'
+php artisan migrate:refresh --path='./database/migrations/2023_09_17_032338_component_folders.php'
+php artisan migrate:refresh --path='./database/migrations/2023_09_16_153237_component_files.php'
