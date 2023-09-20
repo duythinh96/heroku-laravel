@@ -10,18 +10,12 @@ Demo function for you on production envirorment
 - `develop`: your source will be merge here
 - `deploy`: push you code to heroku
 
-## Develop step
-1. Create your branch and dev
-2. Push commit
-3. Create pull request to `develop`
-4. Request review
-5. After Reviewer confirm create new pull request to deploy
-6. Merge 2 pull
-7. Test Deploy
-8. Fixed your bug on old branch
-9. Loop step 3 - 8 util perfect
-10. Feel free now, 
-11. *optional: contact admin to show your demo link to index page
+## Develop Flow
+- Checkout your branch `personal/{your_name}` from `develop`
+- Dev and commit
+- Create Pull Request to brands `deploy`
+- Add Admin to review
+- Merge
 
 ## Information
 - System build on:
