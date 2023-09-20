@@ -13,6 +13,6 @@ class MainController extends Controller
      */
     public function welcome(): View
     {
-        return view('page.welcome');
+        return view('welcome');
     }
 }
