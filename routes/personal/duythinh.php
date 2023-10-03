@@ -17,6 +17,7 @@ Route::prefix('cloudinary')->group(function () {
 });
 
 Route::get('api', fn () => view('duythinh.api.index'))->name('duythinh.api.demo');
+Route::get('api-multi', fn () => view('duythinh.api.period'))->name('duythinh.api.demo-multi');
 
 Route::prefix('react-component')->group(function () {
     Route::get('combobox', function () {
