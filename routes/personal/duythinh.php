@@ -16,6 +16,8 @@ Route::prefix('cloudinary')->group(function () {
     Route::post('upload', [CloudinaryController::class, 'upload']);
 });
 
+Route::get('api', fn () => view('duythinh.api.index'));
+
 Route::prefix('react-component')->group(function () {
     Route::get('combobox', function () {
         return view('duythinh.react-component.combobox');
