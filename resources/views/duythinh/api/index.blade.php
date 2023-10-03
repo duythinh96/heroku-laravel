@@ -18,9 +18,7 @@
             Call Api
         </button>
     </div>
-    <div id="response" class="card card-body">
-
-    </div>
+    <div id="response" class="card card-body"></div>
 
     <script>
         async function callApi() {
@@ -29,15 +27,13 @@
             const selectedOption = selectElement.options[selectElement.selectedIndex];
             const selectedValue = selectedOption.value;
             const options = document.getElementById('options').innerHTML;
-            const response = await fetch(
-                url,
-                {
-                    method: selectedValue,
-                    options: options,
-                });
+            const response = await fetch(url, {
+                method: selectedValue,
+                headers: {"Content-Type": "application/json",},
+                body: JSON.stringify(options)
+            });
 
             document.getElementById('response').innerHTML = JSON.stringify(response)
-            console.log(response);
         }
     </script>
 @endsection
