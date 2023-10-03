@@ -18,6 +18,8 @@ class MainController extends Controller
         return view(self::ROOT_VIEW . 'index')->with(['list' => [
             ['label' => 'Guide', 'link' => $root . 'guide'],
             ['label' => 'Cloudinary', 'link' => $root . 'cloudinary'],
+            ['label' => 'Api', 'link' => $root . 'api'],
+            ['label' => 'Api send multiple', 'link' => $root . 'api-multi'],
         ]]);
     }
 }
