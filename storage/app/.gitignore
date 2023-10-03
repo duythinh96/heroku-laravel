@@ -1,5 +1,7 @@
 *
-!public/
+!db/
+!db/*
 !file/
+!public/
 !.gitignore
 

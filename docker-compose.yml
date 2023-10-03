@@ -18,6 +18,7 @@ services:
     container_name: 'heroku-laravel-php-fpm'
     build: ./docker/php-fpm
     restart: on-failure
+    working_dir: /srv
     volumes:
       - ./:/srv:cached
 
